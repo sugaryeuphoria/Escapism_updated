@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+}
+
+/*
+The :root CSS pseudo-class matches the root element of a tree representing the document. 
+In HTML, :root represents the <html> element and is identical to the selector html, 
+except that its specificity is higher. --css variable
+*/
+:root{
+    --neon-purple: #f5f1f4;
+    --primary-color:#15052e;
+    --secondary-color: transparent;
+    --yellow: #eca900;
+}
+/* to center page */
+.index-body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+    height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ #navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+    background-color:#15052e;
+    
+  padding:20px;
+  font-weight:bolder ;
+  
+}
+
+#navbar a:hover{
+  background-color: #e1f504;
+    color: #050801;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 0 5px #e1f504,
+                0 0 25px #e1f504,
+                0 0 50px #f9d004,
+                0 0 200px #f9d004;
+    cursor:pointer;
+    
+
+}
+/* nav img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin: 20px 40px;
+  background-color: var(--yellow);
+}  */
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  color: var(--neon-purple);
+  font-size: 10rem;
+
+  color:#eca900;
+
+  /* text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      /* 0 0 150px #f09; */
+} 
+
+.carousel {
+  height: 600px;
+  width: 85%;
+  position: relative;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 100px;
+  line-height: 400px;
+  font-size: 25px;
+  text-align: center;
+  background-color: transparent;
+  /* hover ke ander */
+  top: 0;
+  z-index: 3;
+  font-size: 10rem;
+}
+
+.carousel .switchLeft {
+  position: absolute;
+  left: -100px;
+  /* within frame */
+}
+
+.carousel .switchRight{
+  position: absolute;
+  right: -100px;
+}
+
+.carouselbox {
+  height: 600px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  /* wrap movie poster */
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.carouselbox img {
+  /* min-width: 147px;
+  max-width: 147px;
+  height: 200px; */
+  min-width: 400px;
+  max-height: 600px;
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  background-color: lightgreen;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  /* ease = easiness of transition */
+  /* z-index: 7; */
+}
+
+.carouselbox img:hover {
+  transform: scale(1.2);
+  z-index: 8;
+  /* position: absolute; */
+}
+
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#14052a, #C724B1);
+}
+
+@keyframes animatedbtn1{
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left: 100%;
+  }
+}
+
+
+
+@keyframes animatedbtn3{
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  text-align:center;
+  padding-left: 20px;
+  font-size: larger;
+}
+
+.content {
+  padding: 16px;
+}
+
+.icons i {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+
+.icons i:hover {
+	transform: scale(3);
+}
+
+.icons i:hover {
+	color: rgb(222, 2, 222);
+}
+footer small {
+	color: #fff;
+	font-size: xx-large;
+}
+
+footer {
+	background-color: #050801;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
